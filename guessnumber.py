@@ -1,8 +1,11 @@
 import random
-r = random.randint(1 , 100)
-
+start = input('請定義開始數字')
+end = input('請定義結束數字')
+r = random.randint(int(start) , int(end))
+i = 0
 while True:
-	x = input('請猜1~100之間的數字')
+	i += 1
+	x = input('請猜你的數字: ')
 	x = int(x)
 	if x == r:
 		print('恭喜你猜對!!')
@@ -11,3 +14,5 @@ while True:
 		print('比答案大')
 	else:
 		print('比答案小')
+	print('你已經猜了', i ,'次')
+print('你已經猜了', i ,'次')
